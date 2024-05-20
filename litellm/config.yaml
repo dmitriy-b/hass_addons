@@ -13,6 +13,8 @@ arch:
 init: false
 map:
   - share:rw
+ports:
+  4000/tcp: 4000
 options:
   message: "Hello world..."
 schema:
