@@ -3,8 +3,7 @@ FROM $BUILD_FROM
 
 # Install requirements for add-on
 RUN \
-  apk add --no-cache \
-    python3 pip3
+  apk update & apk add python3 pip
 
 # Copy application files and install dependencies
 COPY requirements.txt /app/requirements.txt
