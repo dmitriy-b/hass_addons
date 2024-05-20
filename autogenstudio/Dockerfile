@@ -26,4 +26,4 @@ RUN autogenstudio version
 
 EXPOSE 8081
 
-ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
+ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081", "--appdir", "/share/autogenstudio"]

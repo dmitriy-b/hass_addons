@@ -14,7 +14,11 @@ init: false
 map:
   - share:rw
 ports:
-  8081/tcp: 8081
+  8081/tcp: 8095
+ingress: true
+ingress_port: 0
+ingress_entry: "/"
+ingress_stream: true
 options:
   message: "Hello world..."
 schema:
