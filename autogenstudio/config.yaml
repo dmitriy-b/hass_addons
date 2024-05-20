@@ -1,0 +1,22 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Autogen Studio add-on
+version: "main-latest"
+slug: autogenstudio
+description: Autogen Studio add-on
+url: "https://github.com/dmitriy-b/hass_addons/tree/main/autogenstudio"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+ports:
+  8081/tcp: 8081
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+# image: "ghcr.io/dmitriy-b/{arch}-addon-litellm"
