@@ -1,5 +1,5 @@
 ARG LITELLM_REPOSITORY LITELLM_VERSION
-FROM LITELLM_REPOSITORY:LITELLM_VERSION as builder
+FROM $LITELLM_REPOSITORY:$LITELLM_VERSION as builder
 # COPY --from=builder /app/ /app
 
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
