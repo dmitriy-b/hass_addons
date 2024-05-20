@@ -4,11 +4,11 @@ FROM $BUILD_FROM
 # Install requirements for add-on
 RUN \
   apk add --no-cache \
-    python3
+    python3 py3-pip
 
 # Copy application files and install dependencies
 COPY requirements.txt /app/requirements.txt
-# RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pip
 WORKDIR /app
 RUN pip install -r requirements.txt && pip install autogenstudio
 
