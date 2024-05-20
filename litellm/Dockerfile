@@ -16,5 +16,5 @@ FROM $LITELLM_REPOSITORY:$LITELLM_VERSION as builder
 COPY rootfs /
 
 # COPY docker-entrypoint.sh /tmp/docker-entrypoint.sh
-ENTRYPOINT [ "--config", "/share/litellm/config.yaml", "--port", "4000", "--num_workers", "8" ]
+ENTRYPOINT [ "litellm", "--config", "/share/litellm/config.yaml", "--port", "4000", "--num_workers", "8" ]
 EXPOSE 4000/tcp
