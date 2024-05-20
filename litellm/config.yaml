@@ -2,7 +2,7 @@
 name: Litellm add-on
 version: "main-latest"
 slug: litellm
-description: Example add-on
+description: Litellm add-on
 url: "https://github.com/dmitriy-b/hass_addons/tree/main/litellm"
 arch:
   - armhf
@@ -17,4 +17,4 @@ options:
   message: "Hello world..."
 schema:
   message: "str?"
-image: "ghcr.io/dmitriy-b/{arch}-addon-litellm"
+# image: "ghcr.io/dmitriy-b/{arch}-addon-litellm"
