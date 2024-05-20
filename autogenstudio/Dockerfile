@@ -8,9 +8,9 @@ RUN \
 
 # Copy application files and install dependencies
 COPY requirements.txt /app/requirements.txt
-RUN pip3 install --upgrade pip
+# RUN pip3 install --upgrade pip
 WORKDIR /app
-RUN pip3 install -r requirements.txt && pip3 install autogenstudio
+RUN pip install -r requirements.txt && pip install autogenstudio
 
 # Set the path
 ENV PATH="/home/app/.local/bin:${PATH}"
