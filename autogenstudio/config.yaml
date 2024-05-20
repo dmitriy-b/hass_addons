@@ -15,8 +15,7 @@ map:
   - share:rw
 ports:
   8081/tcp: 8095
-network:
-  80/TCP: The webserver port (Not used for Ingress)
+host_network: true
 ingress: true
 ingress_port: 0
 ingress_entry: "/"
