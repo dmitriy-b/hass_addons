@@ -4,13 +4,13 @@ FROM $BUILD_FROM
 # Install requirements for add-on
 RUN \
   apk add --no-cache \
-    python3
+    python3 pip3
 
 # Copy application files and install dependencies
 COPY requirements.txt /app/requirements.txt
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 WORKDIR /app
-RUN pip install -r requirements.txt && pip install autogenstudio
+RUN pip3 install -r requirements.txt && pip3 install autogenstudio
 
 # Set the path
 ENV PATH="/home/app/.local/bin:${PATH}"
