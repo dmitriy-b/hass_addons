@@ -24,6 +24,6 @@ ARG OPENAI_API_KEY
 
 RUN autogenstudio version
 
-EXPOSE 8081
+EXPOSE 8095
 
-ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081", "--appdir", "/share/autogenstudio"]
+ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8095", "--appdir", "/share/autogenstudio"]
